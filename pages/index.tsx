@@ -2,7 +2,7 @@ import fetch from "isomorphic-unfetch";
 import { ApolloProvider } from "@apollo/react-hooks";
 import ApolloClient, { gql } from "apollo-boost";
 
-import { ExchangeRates } from "../components";
+import { BookInfo } from "../components";
 
 const Home = ({ data }) => {
   const client = new ApolloClient({
@@ -13,7 +13,7 @@ const Home = ({ data }) => {
     <ApolloProvider client={client}>
       <div>
         <h1>NextJS GraphQL Apollo App</h1>
-        <ExchangeRates />
+        <BookInfo />
       </div>
     </ApolloProvider>
   );

@@ -1,1 +1,1 @@
-export { ExchangeRates } from "./ExchangeRates";
+export { BookInfo } from "./BookInfo";

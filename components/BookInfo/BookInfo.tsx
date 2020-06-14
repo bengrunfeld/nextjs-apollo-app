@@ -10,7 +10,7 @@ const BOOK_DETAILS = gql`
   }
 `;
 
-const ExchangeRates = () => {
+const BookInfo = () => {
   const { loading, error, data } = useQuery(BOOK_DETAILS);
 
   if (loading) return <p>Loading...</p>;
@@ -25,4 +25,4 @@ const ExchangeRates = () => {
   );
 };
 
-export default ExchangeRates;
+export default BookInfo;
