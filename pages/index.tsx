@@ -1,10 +1,12 @@
+import fetch from "isomorphic-unfetch";
 import { ApolloProvider } from "@apollo/react-hooks";
 import ApolloClient, { gql } from "apollo-boost";
+
 import { ExchangeRates } from "../components";
 
-const Home = () => {
+const Home = ({ data }) => {
   const client = new ApolloClient({
-    uri: "https://48p1r2roz4.sse.codesandbox.io",
+    uri: "http://localhost:3000/api/graphql",
   });
 
   return (
