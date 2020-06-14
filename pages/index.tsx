@@ -6,7 +6,7 @@ import { BookInfo } from "../components";
 
 const Home = ({ data }) => {
   const client = new ApolloClient({
-    uri: "http://localhost:3000/api/graphql",
+    uri: "http://localhost:3000/api/graphql-data",
   });
 
   return (
