@@ -1,6 +1,6 @@
 import { ApolloServer, gql } from "apollo-server-micro";
 
-const book = {
+let book = {
   name: "The Large Hungarian Sausage",
   author: "Ben Grunfeld",
 };
@@ -14,11 +14,23 @@ const typeDefs = gql`
   type Query {
     book: Book
   }
+
+  type Mutation {
+    updateBook(name: String!, author: String!): Book
+  }
 `;
 
 const resolvers = {
   Query: {
     book: () => book,
+  },
+
+  Mutation: {
+    updateBook: (root, args) => {
+      book.name = args.name;
+      book.author = args.author;
+      return book;
+    },
   },
 };
 
