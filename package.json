@@ -10,17 +10,17 @@
   "dependencies": {
     "@apollo/react-hooks": "^3.1.5",
     "apollo-boost": "^0.4.9",
-    "apollo-server-micro": "^2.14.4",
-    "graphql": "^15.1.0",
-    "isomorphic-unfetch": "^3.0.0",
-    "next": "9.4.4",
+    "apollo-server-micro": "^2.19.0",
+    "graphql": "^15.4.0",
+    "isomorphic-unfetch": "^3.1.0",
+    "next": "^10.0.0",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   },
   "devDependencies": {
-    "@types/node": "^14.0.13",
-    "@types/react": "^16.9.36",
-    "prettier": "^2.0.5",
-    "typescript": "^3.9.5"
+    "@types/node": "^14.14.6",
+    "@types/react": "^16.9.55",
+    "prettier": "^2.1.2",
+    "typescript": "^3.9.7"
   }
 }
